@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dl8grjsmk0uli"]
+
+[ext_resource type="Script" uid="uid://upfkk6wwkccv" path="res://UI/day_counter.gd" id="1_a8236"]
+
+[node name="DayCounter" type="PanelContainer" unique_id=789407054]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_a8236")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1628406202]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=969441926]
+layout_mode = 2
+
+[node name="DayLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=727562859]
+layout_mode = 2
+text = "Day "
+
+[node name="ClockLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=505356858]
+layout_mode = 2
+
+[node name="ProgressBar" type="ProgressBar" parent="MarginContainer/VBoxContainer" unique_id=1157066714]
+layout_mode = 2
+
+[node name="TimeMarkers" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=705252149]
+layout_mode = 2

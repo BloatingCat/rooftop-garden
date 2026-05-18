@@ -12,7 +12,11 @@ config_version=5
 
 config/name="Rooftop Garden"
 config/features=PackedStringArray("4.6", "GL Compatibility")
-config/icon="res://icon.svg"
+
+[autoload]
+
+GameState="*uid://b01xmoisxi3ci"
+Events="*uid://53rjod6ps4w7"
 
 [physics]
 
