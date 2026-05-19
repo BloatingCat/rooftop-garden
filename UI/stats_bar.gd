@@ -22,4 +22,3 @@ func _refresh(_arg = null) -> void:
 	aura_value.text = str(GameState.aura)
 	food_value.text = str(GameState.food)
 	waiting_value.text = str(GameState.customers.size())
-	print(GameState.customers.size())

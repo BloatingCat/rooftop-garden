@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://g03octkbab36"]
+
+[ext_resource type="Script" uid="uid://ddioi7lhwma15" path="res://UI/log_panel.gd" id="1_223ox"]
+
+[node name="LogPanel" type="PanelContainer" unique_id=781560376]
+offset_right = 600.0
+offset_bottom = 120.0
+script = ExtResource("1_223ox")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=938764678]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=905217966]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/VBoxContainer" unique_id=1824654768]
+layout_mode = 2
+
+[node name="LogList" type="VBoxContainer" parent="MarginContainer/VBoxContainer/ScrollContainer" unique_id=701936026]
+layout_mode = 2

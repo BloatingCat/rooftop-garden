@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://r8f1a2a0i6cu" path="res://UI/stats_bar.tscn" id="2_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://ximwq7yem4vc" path="res://UI/make_food_button.tscn" id="3_lquwl"]
 [ext_resource type="PackedScene" uid="uid://curc8ntwde18m" path="res://systems/customer_system.tscn" id="4_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://g03octkbab36" path="res://UI/log_panel.tscn" id="4_lquwl"]
 
 [node name="Main" type="Node2D" unique_id=2022521338]
 script = ExtResource("1_7mycd")
@@ -23,5 +24,10 @@ offset_left = 1.0
 offset_top = 91.0
 offset_right = 91.0
 offset_bottom = 122.0
+
+[node name="LogPanel" parent="UI" unique_id=781560376 instance=ExtResource("4_lquwl")]
+offset_left = 562.0
+offset_right = 1152.0
+offset_bottom = 117.0
 
 [node name="CustomerSystem" parent="." unique_id=2104764177 instance=ExtResource("4_1bvp3")]
