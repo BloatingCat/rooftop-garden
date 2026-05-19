@@ -3,8 +3,8 @@
 [ext_resource type="Script" uid="uid://upfkk6wwkccv" path="res://UI/day_counter.gd" id="1_a8236"]
 
 [node name="DayCounter" type="PanelContainer" unique_id=789407054]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 200.0
+offset_bottom = 85.0
 script = ExtResource("1_a8236")
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=1628406202]

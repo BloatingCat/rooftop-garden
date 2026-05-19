@@ -10,6 +10,11 @@ var day: int = 1
 var day_elapsed: float = 0.0
 var day_energy: int = 0         # 0.0 → DAY_DURATION_REAL
 
+var coins: int = 50
+var aura: int = 0
+var food: int = 0
+var customers: Array = [] 
+
 func _process(delta: float) -> void:
 	day_elapsed += delta
 	if day_elapsed >= DAY_DURATION_REAL:

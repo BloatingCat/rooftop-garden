@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://r8f1a2a0i6cu"]
+
+[ext_resource type="Script" uid="uid://govbrba4qc4h" path="res://UI/stats_bar.gd" id="1_6vrqj"]
+
+[node name="StatsBar" type="HBoxContainer" unique_id=1366430180]
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/separation = 20
+script = ExtResource("1_6vrqj")
+
+[node name="StatCoin" type="VBoxContainer" parent="." unique_id=1659464051]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="StatCoin" unique_id=1660980129]
+layout_mode = 2
+text = "COINS"
+
+[node name="CoinsValue" type="Label" parent="StatCoin" unique_id=85684627]
+layout_mode = 2
+
+[node name="StatEnergy" type="VBoxContainer" parent="." unique_id=1216922433]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="StatEnergy" unique_id=19633727]
+layout_mode = 2
+text = "ENERGY"
+
+[node name="EnergyValue" type="Label" parent="StatEnergy" unique_id=499647045]
+layout_mode = 2
+
+[node name="StatFood" type="VBoxContainer" parent="." unique_id=1554445719]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="StatFood" unique_id=1769174126]
+layout_mode = 2
+text = "FOOD"
+
+[node name="FoodValue" type="Label" parent="StatFood" unique_id=1841905287]
+layout_mode = 2
+
+[node name="StatWaiting" type="VBoxContainer" parent="." unique_id=681016275]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="StatWaiting" unique_id=1363102491]
+layout_mode = 2
+text = "WAITING"
+
+[node name="WaitingValue" type="Label" parent="StatWaiting" unique_id=728825672]
+layout_mode = 2

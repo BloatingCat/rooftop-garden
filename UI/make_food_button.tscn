@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://ximwq7yem4vc"]
+
+[ext_resource type="Script" uid="uid://dbccl61rgn4od" path="res://UI/make_food_button.gd" id="1_b5f3t"]
+
+[node name="MakeFoodButton" type="VBoxContainer" unique_id=1252330523]
+offset_right = 90.0
+offset_bottom = 31.0
+script = ExtResource("1_b5f3t")
+
+[node name="Button" type="Button" parent="." unique_id=938823690]
+layout_mode = 2
+text = "Make food
+"
