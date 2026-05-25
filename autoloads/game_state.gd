@@ -17,6 +17,11 @@ var customers: Array = []
 
 var next_id: int = 1
 
+var aura_multiplier: int = 1
+var serve_slots: int = 1
+var serve_speed_mult: float = 1.0
+var purchased_upgrades: Array[String] = []
+
 func _process(delta: float) -> void:
 	day_elapsed += delta
 	if day_elapsed >= DAY_DURATION_REAL:

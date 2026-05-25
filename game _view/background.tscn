@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dj0mfdk2dnxwo"]
+
+[ext_resource type="Texture2D" uid="uid://bwvagy8d1utqf" path="res://assets/Floor_1_1.png" id="1_eva80"]
+[ext_resource type="Texture2D" uid="uid://ctiptw2vivw1q" path="res://assets/Floor_1_2.png" id="2_r0sni"]
+
+[node name="Background" type="Node2D" unique_id=840402906]
+
+[node name="Background_Floor" type="Sprite2D" parent="." unique_id=265464215]
+texture = ExtResource("1_eva80")
+centered = false
+
+[node name="Foreground_Railings" type="Sprite2D" parent="." unique_id=1453156568]
+z_index = 5
+y_sort_enabled = true
+texture = ExtResource("2_r0sni")
+centered = false
