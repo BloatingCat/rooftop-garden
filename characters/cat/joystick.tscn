@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://ccvel08cbwxpp"]
+
+[ext_resource type="Texture2D" uid="uid://b2tob40kbuj5w" path="res://assets/joystick_base.png" id="1_6xbx1"]
+[ext_resource type="Script" uid="uid://dysixx7awnja3" path="res://characters/cat/joystick.gd" id="1_bl4k5"]
+[ext_resource type="Texture2D" uid="uid://ca1ocklisvapy" path="res://assets/joy_stick_knob.png" id="3_bl4k5"]
+
+[node name="JoyStick" type="Control" unique_id=1121155656]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 72.0
+offset_bottom = 72.0
+script = ExtResource("1_bl4k5")
+
+[node name="Base" type="TextureRect" parent="." unique_id=551762421]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_6xbx1")
+
+[node name="Knob" type="TextureRect" parent="." unique_id=2107702130]
+layout_mode = 0
+offset_right = 42.0
+offset_bottom = 42.0
+texture = ExtResource("3_bl4k5")

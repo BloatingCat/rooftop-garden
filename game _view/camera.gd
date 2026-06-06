@@ -8,7 +8,7 @@ const MIN_ZOOM = 0.3 # further out
 const MAX_ZOOM = 4.0 # further in
 const ZOOM_SPEED = 0.15
 
-func _input(event):
+func _unhandled_input(event: InputEvent) -> void:
 	# 1. HANDLE DRAGGING
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
 		dragging = event.pressed

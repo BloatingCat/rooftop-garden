@@ -3,11 +3,20 @@
 [ext_resource type="Texture2D" uid="uid://bwvagy8d1utqf" path="res://assets/Floor_1_1.png" id="1_eva80"]
 [ext_resource type="Texture2D" uid="uid://ctiptw2vivw1q" path="res://assets/Floor_1_2.png" id="2_r0sni"]
 
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_t6uik"]
+vertices = PackedVector2Array(376, 191.17188, 745.64844, 376, 704, 396.8203, 506, 297.8203, 176.47656, 352.14063, 34.117188, 279.10938, 205.9375, 193.20313, 287.95313, 235.21094, 416, 342.8203, 416, 348.8203, 230, 377.8203, 176.10938, 356.8828, 377.28125, 363.21875, 223.99219, 380.8203, 288.03906, 406.84375, 383.2422, 365.20313)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(4, 5, 6, 7, 8, 9), PackedInt32Array(0, 3, 8, 7), PackedInt32Array(10, 11, 4, 9, 12), PackedInt32Array(10, 13, 11), PackedInt32Array(12, 14, 10), PackedInt32Array(12, 9, 15)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(206, 182, 12, 279, 166, 358, 160, 360, 224, 392, 230, 389, 288, 418, 378, 374, 384, 376, 432, 352, 426, 349, 506, 309, 704, 408, 768, 376, 376, 180, 288, 224)])
+
 [node name="Background" type="Node2D" unique_id=840402906]
+y_sort_enabled = true
 
 [node name="Background_Floor" type="Sprite2D" parent="." unique_id=265464215]
 texture = ExtResource("1_eva80")
 centered = false
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="." unique_id=1106266190]
+navigation_polygon = SubResource("NavigationPolygon_t6uik")
 
 [node name="Foreground_Railings" type="Sprite2D" parent="." unique_id=1453156568]
 z_index = 5

@@ -1,7 +1,8 @@
 extends Node2D
 
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	#print_tree_pretty()
-	pass
+@onready var cat: Cat = $BlackCat
+@onready var joystick: Joystick = $UI/Joystick
+
+func _ready():
+	cat.joystick = joystick

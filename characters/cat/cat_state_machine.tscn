@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bdqha4y2wngr6"]
+
+[ext_resource type="Script" uid="uid://bro1m2afuy27" path="res://characters/cat/cat_state_machine.gd" id="1_1smh5"]
+
+[node name="CatStateMachine" type="Node" unique_id=785292820]
+script = ExtResource("1_1smh5")
