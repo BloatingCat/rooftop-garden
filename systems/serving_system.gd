@@ -26,14 +26,16 @@ func _try_start_serving() -> void:
 	Events.serving_started.emit(_current_customer)
 
 func _complete_serve() -> void:
-	# customer may have left while being served
 	if not GameState.customers.has(_current_customer):
 		_reset()
 		return
-	GameState.customers.erase(_current_customer)
+	var c := _current_customer
+	GameState.customers.erase(c)
+	if c.has("node") and is_instance_valid(c["node"]):
+		c["node"].queue_free()
 	GameState.food -= 1
-	GameState.coins += 5
-	Events.customer_served.emit(_current_customer)
+	GameState.coins += 7
+	Events.customer_served.emit(c)
 	_reset()
 
 func _reset() -> void:

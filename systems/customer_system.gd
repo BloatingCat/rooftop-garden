@@ -40,7 +40,6 @@ func _try_spawn() -> void:
 	GameState.customers.append(c)
 
 	var guest := GUEST_SCENE.instantiate() as GuestDemon
-	print("guest_anchor: ", guest_anchor, " guest position: ", guest.position)
 	guest_anchor.add_child(guest)
 	guest.setup(c)
 	c["node"] = guest   # store reference on the data dict
@@ -64,7 +63,7 @@ func _tick_patience(delta: float) -> void:
 		if c["patience_left"] <= 0.0:
 			to_remove.append(c)
 	for c in to_remove:
-		GameState.customers.erase(c)
+		_remove_customer(c)
 		Events.customer_left.emit(c)
 
 func _tick_aura(delta: float) -> void:

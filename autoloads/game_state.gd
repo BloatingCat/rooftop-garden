@@ -42,3 +42,8 @@ func get_display_time() -> Dictionary:
 	if hour >= 24:
 		hour -= 24
 	return { "hour": hour, "minute": minute }
+	
+#func remove_customer(c: Dictionary) -> void:
+	#customers.erase(c)
+	#if c.has("node") and is_instance_valid(c["node"]):
+		#c["node"].queue_free()
