@@ -7,6 +7,9 @@ const ENERGY_TICK_SEC := 2.0
 const BASE_SPAWN_SEC := 8.0
 const MAX_CUSTOMERS := 5
 
+const GUEST_SCENE := preload("res://characters/customers/guest_demon.tscn")
+@export var guest_anchor: Node2D
+
 var _spawn_accum := 0.0
 var _aura_accum := 0.0
 
@@ -35,7 +38,24 @@ func _try_spawn() -> void:
 	}
 	GameState.next_id += 1
 	GameState.customers.append(c)
+
+	var guest := GUEST_SCENE.instantiate() as GuestDemon
+	print("guest_anchor: ", guest_anchor, " guest position: ", guest.position)
+	guest_anchor.add_child(guest)
+	guest.setup(c)
+	c["node"] = guest   # store reference on the data dict
+	guest.position = _rand_spawn_position()
+		   
+
 	Events.customer_arrived.emit(c)
+
+func _rand_spawn_position() -> Vector2:
+	# these should match your visible rooftop floor area in world coords
+	var world_pos := Vector2(
+		randf_range(200.0, 600.0),
+		randf_range(300.0, 450.0)
+	)
+	return guest_anchor.to_local(world_pos)
 
 func _tick_patience(delta: float) -> void:
 	var to_remove := []
@@ -65,3 +85,8 @@ func _rand_name() -> String:
 	var names := ["Linh","Minh","Hoa","Nam","Thu","Bao","Mai","Tuan",
 				  "Lan","Duc","Anh","Khoa","Vex","Morvyn","Sha","Nul","Drev"]
 	return names[randi() % names.size()]
+
+func _remove_customer(c: Dictionary) -> void:
+	GameState.customers.erase(c)
+	if c.has("node") and is_instance_valid(c["node"]):
+		c["node"].queue_free()

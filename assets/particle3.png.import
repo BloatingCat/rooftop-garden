@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ca1ocklisvapy"
-path="res://.godot/imported/joy_stick_knob.png-c80ccc02766e4ed6098b3e07f58ea29d.ctex"
+uid="uid://dye3l47i2pck3"
+path="res://.godot/imported/particle3.png-793608ec5b1e67d5d58efd51f66c6d88.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/joy_stick_knob.png"
-dest_files=["res://.godot/imported/joy_stick_knob.png-c80ccc02766e4ed6098b3e07f58ea29d.ctex"]
+source_file="res://assets/particle3.png"
+dest_files=["res://.godot/imported/particle3.png-793608ec5b1e67d5d58efd51f66c6d88.ctex"]
 
 [params]
 

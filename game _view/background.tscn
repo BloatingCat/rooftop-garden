@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dj0mfdk2dnxwo"]
 
-[ext_resource type="Texture2D" uid="uid://bwvagy8d1utqf" path="res://assets/Floor_1_1.png" id="1_eva80"]
-[ext_resource type="Texture2D" uid="uid://ctiptw2vivw1q" path="res://assets/Floor_1_2.png" id="2_r0sni"]
+[ext_resource type="Texture2D" uid="uid://bwvagy8d1utqf" path="res://assets/locale/Floor_1_1.png" id="1_eva80"]
+[ext_resource type="Texture2D" uid="uid://ctiptw2vivw1q" path="res://assets/locale/Floor_1_2.png" id="2_r0sni"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_t6uik"]
 vertices = PackedVector2Array(376, 191.17188, 745.64844, 376, 704, 396.8203, 506, 297.8203, 176.47656, 352.14063, 34.117188, 279.10938, 205.9375, 193.20313, 287.95313, 235.21094, 416, 342.8203, 416, 348.8203, 230, 377.8203, 176.10938, 356.8828, 377.28125, 363.21875, 223.99219, 380.8203, 288.03906, 406.84375, 383.2422, 365.20313)

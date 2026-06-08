@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b2tob40kbuj5w"
-path="res://.godot/imported/joystick_base.png-bd156eeed8282a38d5f031513c39f0a8.ctex"
+uid="uid://gaibuubqbdii"
+path="res://.godot/imported/body.png-bd49b453964281ba1901fa81cfa5b4b3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/joystick_base.png"
-dest_files=["res://.godot/imported/joystick_base.png-bd156eeed8282a38d5f031513c39f0a8.ctex"]
+source_file="res://assets/npc/body.png"
+dest_files=["res://.godot/imported/body.png-bd49b453964281ba1901fa81cfa5b4b3.ctex"]
 
 [params]
 
