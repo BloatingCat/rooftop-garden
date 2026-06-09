@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="GuestData" format=3 uid="uid://bw5ujxcn2f0se"]
+
+[ext_resource type="Script" uid="uid://0wjv0n214wt2" path="res://data/guest_data.gd" id="1_rwhe7"]
+[ext_resource type="Texture2D" uid="uid://gaibuubqbdii" path="res://assets/npc/body.png" id="1_slrwq"]
+[ext_resource type="Texture2D" uid="uid://b5p6nrbmatm7r" path="res://assets/npc/large_eyes.png" id="2_n3i6h"]
+[ext_resource type="Texture2D" uid="uid://b8wd1v6h36613" path="res://assets/npc/small_eyes.png" id="3_n8p4g"]
+[ext_resource type="Texture2D" uid="uid://dp8y2ptqluumc" path="res://assets/npc/tail.png" id="5_qe4pu"]
+[ext_resource type="Texture2D" uid="uid://d27dxayea6xdr" path="res://assets/npc/small_horns.png" id="6_o125b"]
+[ext_resource type="Texture2D" uid="uid://cr3wml3ghs672" path="res://assets/npc/large_horns.png" id="7_tpbpq"]
+[ext_resource type="Texture2D" uid="uid://dirh2qwx3xt5y" path="res://assets/npc/ears.png" id="8_gavjp"]
+
+[resource]
+script = ExtResource("1_rwhe7")
+body_texture = ExtResource("1_slrwq")
+tail_texture = ExtResource("5_qe4pu")
+eye_textures = Array[Texture2D]([ExtResource("2_n3i6h"), ExtResource("3_n8p4g")])
+top_textures = Array[Texture2D]([ExtResource("6_o125b"), ExtResource("7_tpbpq"), ExtResource("8_gavjp")])
+metadata/_custom_type_script = "uid://0wjv0n214wt2"

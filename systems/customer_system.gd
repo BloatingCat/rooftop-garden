@@ -9,6 +9,8 @@ const MAX_CUSTOMERS := 5
 
 const GUEST_SCENE := preload("res://characters/customers/guest_demon.tscn")
 @export var guest_anchor: Node2D
+@export var guest_data: GuestData
+
 
 var _spawn_accum := 0.0
 var _aura_accum := 0.0
@@ -40,8 +42,10 @@ func _try_spawn() -> void:
 	GameState.customers.append(c)
 
 	var guest := GUEST_SCENE.instantiate() as GuestDemon
+	#guest_anchor.add_child(guest)
+	#guest.setup(c)
 	guest_anchor.add_child(guest)
-	guest.setup(c)
+	guest.setup(c, guest_data)
 	c["node"] = guest   # store reference on the data dict
 	guest.position = _rand_spawn_position()
 		   
