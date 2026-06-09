@@ -2,7 +2,7 @@
 class_name CustomerSystem
 extends Node
 
-const PATIENCE_SEC := 12.0
+const PATIENCE_SEC := 30.0
 const ENERGY_TICK_SEC := 2.0
 const BASE_SPAWN_SEC := 8.0
 const MAX_CUSTOMERS := 5
@@ -13,14 +13,14 @@ const GUEST_SCENE := preload("res://characters/customers/guest_demon.tscn")
 
 
 var _spawn_accum := 0.0
-var _aura_accum := 0.0
+#var _aura_accum := 0.0
 
 func _process(delta: float) -> void:
 	if GameState.day_elapsed >= GameState.DAY_DURATION_REAL:
 		return
 	_tick_spawn(delta)
 	_tick_patience(delta)
-	_tick_aura(delta)
+	#_tick_aura(delta)
 
 func _tick_spawn(delta: float) -> void:
 	var interval := maxf(2.5, BASE_SPAWN_SEC - GameState.aura * 0.04)
@@ -70,19 +70,19 @@ func _tick_patience(delta: float) -> void:
 		_remove_customer(c)
 		Events.customer_left.emit(c)
 
-func _tick_aura(delta: float) -> void:
-	_aura_accum += delta
-	if _aura_accum < ENERGY_TICK_SEC:
-		return
-	_aura_accum -= ENERGY_TICK_SEC
-	var n := GameState.customers.size()
-	if n == 0:
-		return
-	for c in GameState.customers:
-		c["aura_leaked"] += 1
-	GameState.aura += n
-	GameState.day_aura += n
-	Events.aura_gained.emit(n, "ambient")
+#func _tick_aura(delta: float) -> void:
+	#_aura_accum += delta
+	#if _aura_accum < ENERGY_TICK_SEC:
+		#return
+	#_aura_accum -= ENERGY_TICK_SEC
+	#var n := GameState.customers.size()
+	#if n == 0:
+		#return
+	#for c in GameState.customers:
+		#c["aura_leaked"] += 1
+	#GameState.aura += n
+	#GameState.day_aura += n
+	#Events.aura_gained.emit(n, "ambient")
 
 func _rand_name() -> String:
 	var names := ["Linh","Minh","Hoa","Nam","Thu","Bao","Mai","Tuan",

@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bsmab2rwvgy7n"]
+
+[ext_resource type="Script" uid="uid://2orgkqeudpua" path="res://systems/producers/cat_producer.gd" id="1_xwyus"]
+
+[node name="CatProducer" type="Node" unique_id=1682737414]
+script = ExtResource("1_xwyus")
+metadata/_custom_type_script = "uid://2orgkqeudpua"

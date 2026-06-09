@@ -7,10 +7,12 @@
 [ext_resource type="PackedScene" uid="uid://curc8ntwde18m" path="res://systems/customer_system.tscn" id="4_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://ccvel08cbwxpp" path="res://characters/cat/joystick.tscn" id="5_kek77"]
 [ext_resource type="PackedScene" uid="uid://q8sbte2cob1" path="res://systems/serving_system.tscn" id="6_7mycd"]
+[ext_resource type="PackedScene" uid="uid://cf42wm7gviwc0" path="res://UI/aura_counter.tscn" id="6_ycdy4"]
 [ext_resource type="PackedScene" uid="uid://dj0mfdk2dnxwo" path="res://game _view/background.tscn" id="7_272bh"]
 [ext_resource type="Resource" uid="uid://bw5ujxcn2f0se" path="res://data/guest_demon/guest_demon.tres" id="7_efxa6"]
 [ext_resource type="Script" uid="uid://i5g4d2ihbms0" path="res://game _view/camera.gd" id="8_5vw27"]
 [ext_resource type="PackedScene" uid="uid://rgwhjo1jc4wx" path="res://characters/cat/cat.tscn" id="10_4c57u"]
+[ext_resource type="PackedScene" uid="uid://bqim6284b7eeg" path="res://systems/producers/floor_producer.tscn" id="12_dg77c"]
 
 [node name="Main" type="Node2D" unique_id=2022521338]
 y_sort_enabled = true
@@ -37,6 +39,10 @@ offset_top = 74.0
 offset_right = 1068.0
 offset_bottom = 146.0
 
+[node name="AuraCounter" parent="UI" unique_id=178298980 instance=ExtResource("6_ycdy4")]
+offset_top = 272.0
+offset_bottom = 333.0
+
 [node name="CustomerSystem" parent="." unique_id=2104764177 node_paths=PackedStringArray("guest_anchor") instance=ExtResource("4_1bvp3")]
 guest_anchor = NodePath("../Node2D")
 guest_data = ExtResource("7_efxa6")
@@ -55,3 +61,5 @@ position = Vector2(433, 443)
 
 [node name="Node2D" type="Node2D" parent="." unique_id=1272844573]
 position = Vector2(623, 472)
+
+[node name="FloorProducer" parent="." unique_id=1839603269 instance=ExtResource("12_dg77c")]

@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://b3y6hc1h5v5v4" path="res://characters/cat/cat_data.gd" id="2_c6vmg"]
 [ext_resource type="Texture2D" uid="uid://dy7j8yck5oyfj" path="res://assets/black_cat1.png" id="3_c6vmg"]
 [ext_resource type="PackedScene" uid="uid://bdqha4y2wngr6" path="res://characters/cat/cat_state_machine.tscn" id="3_xfgbo"]
+[ext_resource type="PackedScene" uid="uid://bsmab2rwvgy7n" path="res://systems/producers/cat_producer.tscn" id="5_uhhm1"]
 
 [sub_resource type="Resource" id="Resource_uhhm1"]
 script = ExtResource("2_c6vmg")
@@ -28,3 +29,5 @@ shape = SubResource("RectangleShape2D_yvbu6")
 avoidance_enabled = true
 
 [node name="CatStateMachine" parent="." unique_id=785292820 instance=ExtResource("3_xfgbo")]
+
+[node name="CatProducer" parent="." unique_id=1682737414 instance=ExtResource("5_uhhm1")]

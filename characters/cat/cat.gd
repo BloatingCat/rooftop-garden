@@ -6,6 +6,7 @@ extends CharacterBody2D
 @onready var sprite: Sprite2D = $Sprite2D
 @onready var state_machine: CatStateMachine = $CatStateMachine
 @onready var nav_agent: NavigationAgent2D = $NavigationAgent2D
+@onready var cat_producer: CatProducer = $CatProducer
 
 var _nav_ready := false
 

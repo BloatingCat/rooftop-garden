@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bqim6284b7eeg"]
+
+[ext_resource type="Script" uid="uid://b51ll80v285xy" path="res://systems/producers/floor_producer.gd" id="1_cbiig"]
+
+[node name="FloorProducer" type="Node" unique_id=1839603269]
+script = ExtResource("1_cbiig")
+metadata/_custom_type_script = "uid://b51ll80v285xy"

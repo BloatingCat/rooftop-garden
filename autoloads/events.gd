@@ -14,3 +14,6 @@ signal serving_started(customer: Dictionary)
 
 signal upgrade_available(upgrade: UpgradeData)
 signal upgrade_purchased(upgrade: UpgradeData)
+
+signal cat_petted(stored_aura: int)
+signal cat_harvested(amount: int)
