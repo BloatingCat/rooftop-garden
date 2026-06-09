@@ -18,6 +18,10 @@ config/features=PackedStringArray("4.6", "GL Compatibility")
 GameState="*uid://b01xmoisxi3ci"
 Events="*uid://53rjod6ps4w7"
 
+[global_group]
+
+aura_pool=""
+
 [physics]
 
 3d/physics_engine="Jolt Physics"

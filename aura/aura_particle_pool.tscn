@@ -1,3 +1,6 @@
 [gd_scene format=3 uid="uid://7fukmm4ccyub"]
 
-[node name="AuraParticlePool" type="Node" unique_id=296488466]
+[ext_resource type="Script" uid="uid://3udpka0r3xvx" path="res://aura/aura_particle_pool.gd" id="1_g0los"]
+
+[node name="AuraParticlePool" type="Node" unique_id=296488466 groups=["aura_pool"]]
+script = ExtResource("1_g0los")

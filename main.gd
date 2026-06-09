@@ -6,3 +6,4 @@ extends Node2D
 
 func _ready():
 	cat.joystick = joystick
+	#print_tree_pretty()

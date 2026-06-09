@@ -13,6 +13,7 @@
 [ext_resource type="Script" uid="uid://i5g4d2ihbms0" path="res://game _view/camera.gd" id="8_5vw27"]
 [ext_resource type="PackedScene" uid="uid://rgwhjo1jc4wx" path="res://characters/cat/cat.tscn" id="10_4c57u"]
 [ext_resource type="PackedScene" uid="uid://bqim6284b7eeg" path="res://systems/producers/floor_producer.tscn" id="12_dg77c"]
+[ext_resource type="PackedScene" uid="uid://7fukmm4ccyub" path="res://aura/aura_particle_pool.tscn" id="13_w48qg"]
 
 [node name="Main" type="Node2D" unique_id=2022521338]
 y_sort_enabled = true
@@ -61,5 +62,7 @@ position = Vector2(433, 443)
 
 [node name="Node2D" type="Node2D" parent="." unique_id=1272844573]
 position = Vector2(623, 472)
+
+[node name="AuraParticlePool" parent="Node2D" unique_id=296488466 instance=ExtResource("13_w48qg")]
 
 [node name="FloorProducer" parent="." unique_id=1839603269 instance=ExtResource("12_dg77c")]
