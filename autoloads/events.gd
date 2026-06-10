@@ -17,3 +17,5 @@ signal upgrade_purchased(upgrade: UpgradeData)
 
 signal cat_petted(stored_aura: int)
 signal cat_harvested(amount: int)
+
+signal producer_registered(producer: Node)

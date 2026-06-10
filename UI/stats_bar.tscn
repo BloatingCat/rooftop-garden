@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://r8f1a2a0i6cu"]
 
-[ext_resource type="Script" uid="uid://govbrba4qc4h" path="res://UI/stats_bar.gd" id="1_6vrqj"]
+[ext_resource type="Script" uid="uid://govbrba4qc4h" path="res://ui/stats_bar.gd" id="1_6vrqj"]
 
 [node name="StatsBar" type="HBoxContainer" unique_id=1366430180]
 offset_right = 40.0

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cf42wm7gviwc0"]
 
-[ext_resource type="Script" uid="uid://cgl8lx8wdugu8" path="res://aura_counter.gd" id="1_42jfh"]
+[ext_resource type="Script" uid="uid://cgl8lx8wdugu8" path="res://ui/aura_counter.gd" id="1_42jfh"]
 
 [node name="AuraCounter" type="PanelContainer" unique_id=178298980]
 offset_right = 150.0

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dl8grjsmk0uli"]
 
-[ext_resource type="Script" uid="uid://upfkk6wwkccv" path="res://UI/day_counter.gd" id="1_a8236"]
+[ext_resource type="Script" uid="uid://upfkk6wwkccv" path="res://ui/day_counter.gd" id="1_a8236"]
 
 [node name="DayCounter" type="PanelContainer" unique_id=789407054]
 offset_right = 200.0

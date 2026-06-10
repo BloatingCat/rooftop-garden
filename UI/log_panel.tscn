@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://g03octkbab36"]
 
-[ext_resource type="Script" uid="uid://ddioi7lhwma15" path="res://UI/log_panel.gd" id="1_223ox"]
+[ext_resource type="Script" uid="uid://ddioi7lhwma15" path="res://ui/log_panel.gd" id="1_223ox"]
 
 [node name="LogPanel" type="PanelContainer" unique_id=781560376]
 offset_right = 600.0

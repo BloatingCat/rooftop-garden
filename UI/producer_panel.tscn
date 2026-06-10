@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://2fsgkljnx8ek"]
+
+[ext_resource type="Script" uid="uid://3p27tbm7qwc4" path="res://ui/producer_panel.gd" id="1_so1hh"]
+
+[node name="ProducerPanel" type="PanelContainer" unique_id=886497951]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_so1hh")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=745416279]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1886086718]
+layout_mode = 2
+
+[node name="HeaderLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1738853883]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="CardList" type="VBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=336060755]
+unique_name_in_owner = true
+layout_mode = 2

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ximwq7yem4vc"]
 
-[ext_resource type="Script" uid="uid://dbccl61rgn4od" path="res://UI/make_food_button.gd" id="1_b5f3t"]
+[ext_resource type="Script" uid="uid://dbccl61rgn4od" path="res://ui/make_food_button.gd" id="1_b5f3t"]
 
 [node name="MakeFoodButton" type="VBoxContainer" unique_id=1252330523]
 offset_right = 90.0
