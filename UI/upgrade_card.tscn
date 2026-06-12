@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://d0dtriwpfjq8f"]
+
+[ext_resource type="Script" uid="uid://cjkral0kdedir" path="res://ui/upgrade_card.gd" id="1_pxkei"]
+
+[node name="UpgradeCard" type="PanelContainer" unique_id=310549237]
+script = ExtResource("1_pxkei")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=2101231376]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1921799948]
+layout_mode = 2
+
+[node name="TitleLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=722917265]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="DescriptionLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1226496333]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="CostLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=794249533]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="BuyButton" type="Button" parent="MarginContainer/VBoxContainer" unique_id=2063976336]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Buy"

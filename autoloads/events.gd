@@ -12,10 +12,12 @@ signal day_started(day: int)
 
 signal serving_started(customer: Dictionary)
 
-signal upgrade_available(upgrade: UpgradeData)
-signal upgrade_purchased(upgrade: UpgradeData)
-
 signal cat_petted(stored_aura: int)
 signal cat_harvested(amount: int)
 
 signal producer_registered(producer: Node)
+
+signal upgrade_available(upgrade: UpgradeData)
+signal upgrade_purchased(upgrade: UpgradeData)
+signal upgrade_completed(upgrade: UpgradeData)
+signal upgrade_failed(upgrade: UpgradeData, reason: String)

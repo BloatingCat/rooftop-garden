@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="UpgradeData" format=3 uid="uid://i12kfbk3m5v6"]
+
+[ext_resource type="Script" uid="uid://clonwjvunrufa" path="res://upgrades/upgrade_data.gd" id="1_kj1te"]
+
+[resource]
+script = ExtResource("1_kj1te")
+id = "dark_appetite"
+title = "Dark Appetite"
+description = "The floor hungers more. Absorbs 2 aura per guest per tick."
+cost_currency = 1
+cost_coins = 80
+unlock_coins = 50
+metadata/_custom_type_script = "uid://clonwjvunrufa"

@@ -2,7 +2,6 @@
 class_name CustomerSystem
 extends Node
 
-const PATIENCE_SEC := 30.0
 const ENERGY_TICK_SEC := 2.0
 const BASE_SPAWN_SEC := 8.0
 const MAX_CUSTOMERS := 5
@@ -35,7 +34,7 @@ func _try_spawn() -> void:
 	var c := {
 		"id": GameState.next_id,
 		"name": _rand_name(),
-		"patience_left": PATIENCE_SEC,
+		"patience_left": GameState.PATIENCE_SEC + GameState.guest_patience_bonus,
 		"aura_leaked": 0,
 	}
 	GameState.next_id += 1

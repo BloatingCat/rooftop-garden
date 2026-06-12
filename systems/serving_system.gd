@@ -34,7 +34,7 @@ func _complete_serve() -> void:
 	if c.has("node") and is_instance_valid(c["node"]):
 		c["node"].queue_free()
 	GameState.food -= 1
-	GameState.coins += 7
+	GameState.coins += GameState.base_sale_price
 	Events.customer_served.emit(c)
 	_reset()
 
@@ -44,5 +44,5 @@ func _reset() -> void:
 	_current_customer = {}
 
 func _serve_time() -> float:
-	return BASE_SERVE_TIME
+	return BASE_SERVE_TIME * GameState.serve_speed_mult
 	# later: return BASE_SERVE_TIME * GameState.serve_speed_multiplier

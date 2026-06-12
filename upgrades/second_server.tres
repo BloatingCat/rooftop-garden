@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="UpgradeData" format=3 uid="uid://d28gdt3r4lmpv"]
+
+[ext_resource type="Script" uid="uid://clonwjvunrufa" path="res://upgrades/upgrade_data.gd" id="1_o0xly"]
+
+[resource]
+script = ExtResource("1_o0xly")
+id = "second_server"
+title = "Second Server"
+description = "A second serving lane runs in parallel."
+cost_coins = 100
+unlock_coins = 80
+metadata/_custom_type_script = "uid://clonwjvunrufa"

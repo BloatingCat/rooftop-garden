@@ -17,10 +17,16 @@ var customers: Array = []
 
 var next_id: int = 1
 
-var aura_multiplier: int = 1
-var serve_slots: int = 1
+var total_aura_earned: int = 0   # lifetime, never spent
+var guest_aura_bonus: int = 0
 var serve_speed_mult: float = 1.0
+var serve_slots: int = 1
+var base_sale_price: int = 7
 var purchased_upgrades: Array[String] = []
+
+var guest_patience_bonus: float = 0.0
+
+const PATIENCE_SEC: float = 12.0
 
 func _process(delta: float) -> void:
 	day_elapsed += delta

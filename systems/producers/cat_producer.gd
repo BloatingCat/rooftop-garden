@@ -29,6 +29,7 @@ func _process(delta: float) -> void:
 	var gained := guests_in_range * aura_per_guest_per_tick
 	stored_aura += gained
 	GameState.aura += gained
+	GameState.total_aura_earned += stored_aura
 	cumulative_aura += gained
 	Events.aura_gained.emit(gained, "cat")
 	_spawn_dots(nearby)

@@ -45,18 +45,20 @@ offset_right = 91.0
 offset_bottom = 122.0
 
 [node name="Joystick" parent="UI" unique_id=1121155656 instance=ExtResource("5_kek77")]
-offset_left = 1016.0
-offset_top = 528.0
-offset_right = 1088.0
-offset_bottom = 600.0
+offset_left = 996.0
+offset_top = 74.0
+offset_right = 1068.0
+offset_bottom = 146.0
 
 [node name="ProducerPanel" parent="UI" unique_id=886497951 instance=ExtResource("6_w48qg")]
-offset_top = 128.0
-offset_bottom = 168.0
+offset_top = 160.0
+offset_bottom = 200.0
 
 [node name="UpgradePanel" parent="UI" unique_id=1744517084 instance=ExtResource("7_1u8w0")]
-offset_left = 512.0
-offset_right = 552.0
+offset_left = 1112.0
+offset_top = 192.0
+offset_right = 1152.0
+offset_bottom = 232.0
 
 [node name="CustomerSystem" parent="." unique_id=2104764177 node_paths=PackedStringArray("guest_anchor") instance=ExtResource("4_1bvp3")]
 guest_anchor = NodePath("../Node2D")

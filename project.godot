@@ -21,6 +21,8 @@ Events="*uid://53rjod6ps4w7"
 [global_group]
 
 aura_pool=""
+cat_producer=""
+floor_producer=""
 
 [physics]
 

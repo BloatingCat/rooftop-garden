@@ -16,8 +16,8 @@ const POP_HEIGHT := 10.0
 const POP_DURATION := 0.18
 const FLOOR_FALL_SPEED := 140.0
 
-func _ready() -> void:
-	print("AuraParticle ready, parent: ", get_parent(), " global_pos: ", global_position)
+#func _ready() -> void:
+	#print("AuraParticle ready, parent: ", get_parent(), " global_pos: ", global_position)
 
 func _process(delta: float) -> void:
 	if not _active:

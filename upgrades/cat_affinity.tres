@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="UpgradeData" format=3 uid="uid://scbs473dpma4"]
+
+[ext_resource type="Script" uid="uid://clonwjvunrufa" path="res://upgrades/upgrade_data.gd" id="1_vmtnc"]
+
+[resource]
+script = ExtResource("1_vmtnc")
+id = "cat_affinity"
+title = "Cat Affinity"
+description = "Dark beings are drawn to the cat. Wider absorption range."
+cost_currency = 1
+cost_aura = 30
+unlock_aura = 20
+metadata/_custom_type_script = "uid://clonwjvunrufa"

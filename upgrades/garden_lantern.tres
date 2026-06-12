@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="UpgradeData" format=3 uid="uid://bheu3mj8tcoa6"]
+
+[ext_resource type="Script" uid="uid://clonwjvunrufa" path="res://upgrades/upgrade_data.gd" id="1_5p3qu"]
+
+[resource]
+script = ExtResource("1_5p3qu")
+id = "garden_lantern"
+title = "Garden Lantern"
+description = "A cursed lantern. Creates a second aura absorption field."
+cost_currency = 2
+cost_coins = 200
+cost_aura = 60
+unlock_coins = 120
+unlock_aura = 40
+upgrade_type = 1
+metadata/_custom_type_script = "uid://clonwjvunrufa"
