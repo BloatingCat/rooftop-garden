@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://mn132fxo2jy"]
+
+[ext_resource type="Script" uid="uid://c4lfpoty3il1l" path="res://ui/body_slot.gd" id="1_5afd7"]
+
+[node name="BodySlot" type="TextureButton" unique_id=1606654025]
+custom_minimum_size = Vector2(48, 48)
+offset_right = 40.0
+offset_bottom = 40.0
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("1_5afd7")
+
+[node name="GreyOverlay" type="ColorRect" parent="." unique_id=1959987797]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.54901963)

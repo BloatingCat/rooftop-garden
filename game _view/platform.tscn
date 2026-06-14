@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dptwp6fmqif27"]
+
+[ext_resource type="Script" uid="uid://bjkfn5105gnoh" path="res://game _view/platform.gd" id="1_02bw4"]
+[ext_resource type="Texture2D" uid="uid://7nmqvl3rq5jk" path="res://assets/locale/platform.png" id="1_hjx1n"]
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_wmyne"]
+points = PackedVector2Array(0, -26, 26, -13, 0, 0, 0, 0, -26, -13)
+
+[node name="Platform" type="Area2D" unique_id=871335509]
+script = ExtResource("1_02bw4")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1776773994]
+position = Vector2(0, -13)
+texture = ExtResource("1_hjx1n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1332029544]
+shape = SubResource("ConvexPolygonShape2D_wmyne")
+
+[node name="CatLockPoint" type="Marker2D" parent="." unique_id=1836353783]
+position = Vector2(0, -13)

@@ -23,6 +23,7 @@ Events="*uid://53rjod6ps4w7"
 aura_pool=""
 cat_producer=""
 floor_producer=""
+harvest_card=""
 
 [physics]
 

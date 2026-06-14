@@ -12,12 +12,16 @@ var guests_in_range: int = 0
 var _accum: float = 0.0
 var _pool: AuraParticlePool = null
 
+var locked: bool = false
+
 func _ready() -> void:
 	await get_tree().process_frame
 	_pool = get_tree().get_first_node_in_group("aura_pool")
 	Events.producer_registered.emit(self)
 
 func _process(delta: float) -> void:
+	if locked:
+		return
 	_accum += delta
 	if _accum < tick_interval:
 		return
@@ -28,7 +32,7 @@ func _process(delta: float) -> void:
 		return
 	var gained := guests_in_range * aura_per_guest_per_tick
 	stored_aura += gained
-	GameState.aura += gained
+	#GameState.aura += gained		# for immediate cat aura gain
 	GameState.total_aura_earned += stored_aura
 	cumulative_aura += gained
 	Events.aura_gained.emit(gained, "cat")

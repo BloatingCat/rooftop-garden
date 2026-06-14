@@ -20,15 +20,19 @@ layout_mode = 2
 [node name="NameLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=581999996]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_font_sizes/font_size = 11
 
 [node name="RateLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=663374714]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_font_sizes/font_size = 11
 
 [node name="GuestsLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=2044349372]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_font_sizes/font_size = 11
 
 [node name="CumulativeLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=247580671]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_font_sizes/font_size = 11

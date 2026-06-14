@@ -21,3 +21,9 @@ signal upgrade_available(upgrade: UpgradeData)
 signal upgrade_purchased(upgrade: UpgradeData)
 signal upgrade_completed(upgrade: UpgradeData)
 signal upgrade_failed(upgrade: UpgradeData, reason: String)
+
+signal cat_locked_to_platform
+signal cat_released_from_platform
+signal harvest_slot_clicked(slot_index: int)
+signal harvest_completed(amount: int)
+signal harvest_cancelled

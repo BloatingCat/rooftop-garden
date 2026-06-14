@@ -24,6 +24,8 @@
 [ext_resource type="Resource" uid="uid://dahpfeg7upt5h" path="res://upgrades/faster_hand.tres" id="16_xuqvo"]
 [ext_resource type="Resource" uid="uid://bheu3mj8tcoa6" path="res://upgrades/garden_lantern.tres" id="17_qsp4k"]
 [ext_resource type="Resource" uid="uid://d28gdt3r4lmpv" path="res://upgrades/second_server.tres" id="18_kq58d"]
+[ext_resource type="PackedScene" uid="uid://dptwp6fmqif27" path="res://game _view/platform.tscn" id="25_0odxb"]
+[ext_resource type="PackedScene" uid="uid://byf8brbpa0q55" path="res://ui/harvest_card.tscn" id="26_lswn8"]
 
 [node name="Main" type="Node2D" unique_id=2022521338]
 y_sort_enabled = true
@@ -76,6 +78,7 @@ position = Vector2(576, 324)
 script = ExtResource("8_5vw27")
 
 [node name="BlackCat" parent="." unique_id=1737522509 instance=ExtResource("10_4c57u")]
+z_index = 1
 position = Vector2(433, 443)
 
 [node name="Node2D" type="Node2D" parent="." unique_id=1272844573]
@@ -84,3 +87,8 @@ position = Vector2(623, 472)
 [node name="AuraParticlePool" parent="Node2D" unique_id=296488466 instance=ExtResource("13_w48qg")]
 
 [node name="FloorProducer" parent="." unique_id=1839603269 instance=ExtResource("12_dg77c")]
+
+[node name="Platform" parent="." unique_id=871335509 instance=ExtResource("25_0odxb")]
+position = Vector2(520, 531)
+
+[node name="HarvestCard" parent="." unique_id=1653399242 groups=["harvest_card"] instance=ExtResource("26_lswn8")]

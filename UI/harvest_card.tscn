@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://byf8brbpa0q55"]
+
+[ext_resource type="Script" uid="uid://c63xkmihtvxeb" path="res://ui/harvest_card.gd" id="1_3f38i"]
+[ext_resource type="PackedScene" uid="uid://mn132fxo2jy" path="res://ui/body_slot.tscn" id="1_37fle"]
+
+[node name="HarvestCard" type="CanvasLayer" unique_id=1653399242]
+script = ExtResource("1_3f38i")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=799906385]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -80.0
+offset_top = -70.5
+offset_right = 80.0
+offset_bottom = 70.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=155697142]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer" unique_id=2047390236]
+layout_mode = 2
+
+[node name="TopRow" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=565979899]
+layout_mode = 2
+
+[node name="TitleLabel" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/TopRow" unique_id=604671362]
+layout_mode = 2
+
+[node name="TooltipLabel" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/TopRow" unique_id=636053054]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="CloseButton" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/TopRow" unique_id=810086269]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="AuraDisplay" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=719403058]
+layout_mode = 2
+
+[node name="AuraLabel" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/AuraDisplay" unique_id=1409317378]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="AuraValue" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/AuraDisplay" unique_id=741320330]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="SlotRow" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=1296584809]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="BodySlot" parent="PanelContainer/MarginContainer/VBoxContainer/SlotRow" unique_id=1606654025 instance=ExtResource("1_37fle")]
+layout_mode = 2
+
+[node name="BodySlot2" parent="PanelContainer/MarginContainer/VBoxContainer/SlotRow" unique_id=1783174379 instance=ExtResource("1_37fle")]
+layout_mode = 2
+
+[node name="BodySlot3" parent="PanelContainer/MarginContainer/VBoxContainer/SlotRow" unique_id=1942333157 instance=ExtResource("1_37fle")]
+layout_mode = 2
+
+[node name="HarvestProgress" type="ProgressBar" parent="PanelContainer/MarginContainer/VBoxContainer" unique_id=150144904]
+unique_name_in_owner = true
+layout_mode = 2
